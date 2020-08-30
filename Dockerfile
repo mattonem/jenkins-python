@@ -3,7 +3,7 @@ MAINTAINER Valery M. <manycoding@users.noreply.github.com>
 
 USER root
 
-RUN apk add --no-cache python3 python3-dev python3-pytest python3-pytest-xdist curl gcc g++ && \
+RUN apk add --no-cache python3 python3-dev py3-pytest py3-pytest-xdist curl gcc g++ && \
     ln -s /usr/include/locale.h /usr/include/xlocale.h && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
